@@ -1,0 +1,33 @@
+﻿@AdvertisementsApi_HostAddress = https://localhost:7283
+
+POST {{AdvertisementsApi_HostAddress}}/ad
+Content-Type: application/json
+
+{
+  "sellerId": 1,
+  "categoryId": 1,
+  "title": "School Books",
+  "description": "Irish, English, Maths"
+}
+###
+
+GET {{AdvertisementsApi_HostAddress}}/ad
+
+###
+
+GET {{AdvertisementsApi_HostAddress}}/ad/{id}
+
+###
+
+PUT {{AdvertisementsApi_HostAddress}}/ad/{id}
+Content-Type: application/json
+
+{
+  "name": "feed fish",
+  "isComplete": false
+}
+###
+
+DELETE {{AdvertisementsApi_HostAddress}}/ad/{id}
+
+###
